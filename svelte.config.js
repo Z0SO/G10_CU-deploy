@@ -28,7 +28,6 @@ const config = {
 
   kit: {
     adapter: adapter({ // No es necesario especificar runtime aquí
-      runtime: 'nodejs18.x',  // Opcional: Define el runtime para tus funciones
     })
   }
 
