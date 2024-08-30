@@ -1,6 +1,5 @@
 
 {
-
   "builds": [
     {
       "src": "svelte.config.js",
@@ -12,5 +11,10 @@
       "src": "/(.*)",
       "dest": "/"
     }
-  ]
+  ],
+  "functions": {
+    "nodejs": {
+      "runtime": "nodejs18.x"
+    }
+  }
 }
