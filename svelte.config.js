@@ -19,26 +19,21 @@
 
 // export default config;
 
+
+
+import vercel from '@sveltejs/adapter-vercel';
 import preprocess from 'svelte-preprocess';
-import adapter from '@sveltejs/adapter-vercel';
 
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
-  // Consult the docs to learn more about preprocessors
-  // https://kit.svelte.dev/docs/integrations#preprocessors
   preprocess: preprocess(),
 
   kit: {
-    // Use the Vercel adapter
-    adapter: adapter({
-      // Options for the Vercel adapter can be set here if needed
-    }),
+    // Cambia el adaptador a @sveltejs/adapter-vercel
+    adapter: vercel(),
 
-    // hydrate the <div id="svelte"> element in src/app.html
-    // target is no longer used in recent versions, so it should be removed
+    // Otras configuraciones pueden ir aquí si es necesario
   }
 };
 
 export default config;
-
-
