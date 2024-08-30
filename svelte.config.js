@@ -19,7 +19,6 @@
 
 // export default config;
 
-
 import adapter from '@sveltejs/adapter-vercel';
 import preprocess from 'svelte-preprocess';
 
@@ -28,9 +27,7 @@ const config = {
   preprocess: preprocess(),
 
   kit: {
-    adapter: adapter({
-      runtime: 'nodejs18.x', // Especifica la versión de Node.js aquí
-    }),
+    adapter: adapter(), // No es necesario especificar runtime aquí
   },
 };
 
