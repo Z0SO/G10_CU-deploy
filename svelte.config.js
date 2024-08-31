@@ -16,21 +16,39 @@
 //     // target is no longer used in recent versions, so it should be removed
 //   }
 // };
-
-// export default config;
-
-import adapter from '@sveltejs/adapter-vercel';
+import adapter from '@sveltejs/adapter-netlify';
 import preprocess from 'svelte-preprocess';
 
-/** @type {import('@sveltejs/kit').Config} */
-const config = {
+export default {
   preprocess: preprocess(),
 
   kit: {
-    adapter: adapter({ // No es necesario especificar runtime aquí
-    })
-  }
+		// default options are shown
+		adapter: adapter({
+			// if true, will create a Netlify Edge Function rather
+			// than using standard Node-based functions
+			edge: false,
 
+			// if true, will split your app into multiple functions
+			// instead of creating a single one for the entire app.
+			// if `edge` is true, this option cannot be used
+			split: false
+		})
+	}
 };
 
-export default config;
+// import adapter from '@sveltejs/adapter-vercel';
+// import preprocess from 'svelte-preprocess';
+
+// /** @type {import('@sveltejs/kit').Config} */
+// const config = {
+//   preprocess: preprocess(),
+
+//   kit: {
+//     adapter: adapter({ // No es necesario especificar runtime aquí
+//     })
+//   }
+
+// };
+
+// export default config;
