@@ -1,15 +1,19 @@
 
+
 <script>  
   import Navbar from '../components/layout/Navbar.svelte';
 </script>
-
-<div 
-  class=" sombra-div-nav-light dark:sombra-div-nav"
->
+<div class="bg-white dark:bg-gray-800 shadow-md">
   <Navbar />
 </div>
 
-<main>
+<main class="p-4 max-w-7xl mx-auto">
   <slot></slot>
 </main>
 
+
+<style>
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+</style>
