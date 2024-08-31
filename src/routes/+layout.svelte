@@ -1,19 +1,13 @@
 
-
-<script>  
+<script>
   import Navbar from '../components/layout/Navbar.svelte';
+  import Footer from '../components/layout/Footer.svelte'; // Importa el componente Footer
 </script>
-<div class="bg-white dark:bg-gray-800 shadow-md">
+
+<div class="min-h-screen flex flex-col bg-gray-100 dark:bg-gray-900">
   <Navbar />
+  <main class="flex-grow">
+    <slot />
+  </main>
+  <Footer /> <!-- Incluye el Footer aquí -->
 </div>
-
-<main class="p-4 max-w-7xl mx-auto">
-  <slot></slot>
-</main>
-
-
-<style>
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-</style>

@@ -1,19 +1,28 @@
 
-<!doctype html>
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" href="%sveltekit.assets%/favicon.png" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<!-- <link rel="stylesheet" href="/src/app.css"> -->
-		<!-- cuando se ejecuta el build preview no encuentra el archivo app.css, por lo que se debe de cambiar la ruta a /build/app.css -->
-	<!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"> -->
-		%sveltekit.head%
-	</head>
-	<body data-sveltekit-preload-data="hover"
 
-     class="bg-gray-100 text-gray-900 font-sans antialiased"
-    >
-		<div style="display: contents">%sveltekit.body%</div>
-	</body>
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="%sveltekit.assets%/favicon.png" />
+    <meta name="description" content="Descripción de tu aplicación" />
+
+    <!-- Importación de estilos optimizados con Tailwind -->
+    <!-- Usa una CDN para desarrollo rápido; para producción, genera y enlaza un archivo CSS optimizado -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@3.2.1/dist/tailwind.min.css" rel="stylesheet">
+
+    <!-- Importa tus estilos adicionales aquí -->
+    <style>
+        /* Puedes agregar estilos globales aquí si es necesario */
+    </style>
+
+    %sveltekit.head%
+</head>
+
+<body data-sveltekit-preload-data="hover" class="bg-gray-100 text-gray-900 font-sans antialiased dark:bg-gray-800 dark:text-gray-100">
+    <div class="contents">%sveltekit.body%</div>
+</body>
+
 </html>
