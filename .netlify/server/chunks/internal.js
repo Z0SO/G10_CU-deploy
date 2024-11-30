@@ -115,7 +115,7 @@ const options = {
   root: Root,
   service_worker: false,
   templates: {
-    app: ({ head, body, assets: assets2, nonce, env }) => '\n<!doctype html>\n<html lang="en">\n	<head>\n		<meta charset="utf-8" />\n		<link rel="icon" href="' + assets2 + '/favicon.png" />\n		<meta name="viewport" content="width=device-width, initial-scale=1" />\n		<!-- <link rel="stylesheet" href="/src/app.css"> -->\n		<!-- cuando se ejecuta el build preview no encuentra el archivo app.css, por lo que se debe de cambiar la ruta a /build/app.css -->\n	<!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"> -->\n		' + head + '\n	</head>\n	<body data-sveltekit-preload-data="hover"\n\n     class="bg-gray-100 text-gray-900 font-sans antialiased"\n    >\n		<div style="display: contents">' + body + "</div>\n	</body>\n</html>\n",
+    app: ({ head, body, assets: assets2, nonce, env }) => '\n\n<!doctype html>\n<html lang="es">\n\n<head>\n    <meta charset="utf-8" />\n    <meta name="viewport" content="width=device-width, initial-scale=1" />\n    <link rel="icon" href="' + assets2 + '/favicon.png" />\n    <meta name="description" content="Descripción de tu aplicación" />\n\n    <!-- Importación de estilos optimizados con Tailwind -->\n    <!-- Usa una CDN para desarrollo rápido; para producción, genera y enlaza un archivo CSS optimizado -->\n    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@3.2.1/dist/tailwind.min.css" rel="stylesheet">\n\n    <!-- Importa tus estilos adicionales aquí -->\n    <style>\n        /* Puedes agregar estilos globales aquí si es necesario */\n    </style>\n\n    ' + head + '\n</head>\n\n<body data-sveltekit-preload-data="hover" class="bg-gray-100 text-gray-900 font-sans antialiased dark:bg-gray-800 dark:text-gray-100">\n    <div class="contents">' + body + "</div>\n</body>\n\n</html>\n",
     error: ({ status, message }) => '<!doctype html>\n<html lang="en">\n	<head>\n		<meta charset="utf-8" />\n		<title>' + message + `</title>
 
 		<style>
@@ -187,7 +187,7 @@ const options = {
 		<div class="error">
 			<span class="status">` + status + '</span>\n			<div class="message">\n				<h1>' + message + "</h1>\n			</div>\n		</div>\n	</body>\n</html>\n"
   },
-  version_hash: "18eodco"
+  version_hash: "10faqgr"
 };
 async function get_hooks() {
   return {};

@@ -75,7 +75,7 @@
       "_ssr.js"
     ],
     "css": [
-      "_app/immutable/assets/_layout.4TO3WRFS.css"
+      "_app/immutable/assets/_layout.D8ek7Q4u.css"
     ]
   },
   "src/routes/+page.svelte": {
@@ -84,7 +84,11 @@
     "src": "src/routes/+page.svelte",
     "isEntry": true,
     "imports": [
-      "_ssr.js"
+      "_ssr.js",
+      "_store.js"
+    ],
+    "css": [
+      "_app/immutable/assets/_page.B_Mx1f8U.css"
     ]
   },
   "src/routes/turnos/+page.svelte": {
@@ -115,6 +119,23 @@
     "imports": [
       "_ssr.js",
       "_store.js"
+    ],
+    "css": [
+      "_app/immutable/assets/_page.DhqDXc8z.css"
+    ]
+  },
+  "src/routes/vehiculos/list/+page.svelte": {
+    "file": "entries/pages/vehiculos/list/_page.svelte.js",
+    "name": "entries/pages/vehiculos/list/_page.svelte",
+    "src": "src/routes/vehiculos/list/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_ssr.js",
+      "_index.js",
+      "_store.js"
+    ],
+    "css": [
+      "_app/immutable/assets/_page.C73toS0R.css"
     ]
   }
 }

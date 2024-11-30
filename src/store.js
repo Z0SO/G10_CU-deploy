@@ -34,3 +34,17 @@ export const listaTurnos = writable([
     { id: 15, fecha: '2024-10-01', hora: '22:00', vehiculo: 'Chevrolet Onix', mecanico: null },
     { id: 16, fecha: '2024-10-01', hora: '23:00', vehiculo: 'Renault Sandero', mecanico: null },
 ]);
+
+// Arreglo de vehículos
+export const listaVehiculos = writable([
+    { patente: 'ABC123', apoderado: 'Juan Perez', periodicidad: 'Mensual', estado: 'Activo', marca: 'Toyota', modelo: 'Corolla', año: 2018 },
+    { patente: 'DEF456', apoderado: 'Maria Gomez', periodicidad: 'Anual', estado: 'Inactivo', marca: 'Honda', modelo: 'Civic', año: 2020 },
+    { patente: 'GHI789', apoderado: 'Carlos Lopez', periodicidad: 'Semestral', estado: 'Activo', marca: 'Ford', modelo: 'Focus', año: 2019 },
+    { patente: 'JKL012', apoderado: 'Ana Martinez', periodicidad: 'Trimestral', estado: 'Activo', marca: 'Chevrolet', modelo: 'Onix', año: 2021 },
+    { patente: 'MNO345', apoderado: 'Luis Fernandez', periodicidad: 'Mensual', estado: 'Inactivo', marca: 'Volkswagen', modelo: 'Golf', año: 2017 },
+    { patente: 'PQR678', apoderado: 'Laura Rodriguez', periodicidad: 'Anual', estado: 'Activo', marca: 'Nissan', modelo: 'Sentra', año: 2022 },
+    { patente: 'STU901', apoderado: 'Pedro Alvarez', periodicidad: 'Semestral', estado: 'Activo', marca: 'BMW', modelo: 'Serie 3', año: 2016 },
+    { patente: 'VWX234', apoderado: 'Marta Silva', periodicidad: 'Trimestral', estado: 'Inactivo', marca: 'Mercedes-Benz', modelo: 'Clase C', año: 2015 },
+    { patente: 'YZA567', apoderado: 'Santiago Fernandez', periodicidad: 'Mensual', estado: 'Activo', marca: 'Audi', modelo: 'A4', año: 2019 },
+    { patente: 'BCD890', apoderado: 'Nicolas Ledesma', periodicidad: 'Anual', estado: 'Activo', marca: 'Fiat', modelo: 'Uno', año: 2018 }
+]);
