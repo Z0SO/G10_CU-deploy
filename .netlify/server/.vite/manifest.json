@@ -88,7 +88,16 @@
       "_store.js"
     ],
     "css": [
-      "_app/immutable/assets/_page.B_Mx1f8U.css"
+      "_app/immutable/assets/_page.CDMyOhMt.css"
+    ]
+  },
+  "src/routes/tarifas/+page.svelte": {
+    "file": "entries/pages/tarifas/_page.svelte.js",
+    "name": "entries/pages/tarifas/_page.svelte",
+    "src": "src/routes/tarifas/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_ssr.js"
     ]
   },
   "src/routes/turnos/+page.svelte": {
@@ -121,7 +130,7 @@
       "_store.js"
     ],
     "css": [
-      "_app/immutable/assets/_page.DhqDXc8z.css"
+      "_app/immutable/assets/_page.DvO_Xp-p.css"
     ]
   },
   "src/routes/vehiculos/list/+page.svelte": {
@@ -135,7 +144,7 @@
       "_store.js"
     ],
     "css": [
-      "_app/immutable/assets/_page.C73toS0R.css"
+      "_app/immutable/assets/_page.C5hXJBdw.css"
     ]
   }
 }

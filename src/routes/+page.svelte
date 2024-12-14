@@ -23,7 +23,7 @@
 
 <div class="max-w-lg mx-auto p-6 bg-white dark:bg-gray-900 rounded-xl shadow-lg space-y-6">
   <h1 class="text-4xl font-extrabold text-center text-gray-800 dark:text-gray-200">
-    ¡Hola! Director Técnico
+        Seleccione una opción
   </h1>
   
   <ul class="space-y-6">
@@ -41,6 +41,15 @@
         href="/vehiculos/list"
         class="block w-full text-center px-8 py-4 bg-gradient-to-r from-teal-400 via-teal-500 to-teal-600 text-white font-semibold rounded-lg shadow-xl transform transition-all hover:scale-105 hover:shadow-2xl hover:bg-gradient-to-r hover:from-teal-500 hover:via-teal-600 hover:to-teal-700 dark:bg-gradient-to-r dark:from-cyan-400 dark:via-cyan-500 dark:to-cyan-600 dark:hover:from-cyan-500 dark:hover:via-cyan-600 dark:hover:to-cyan-700">
                 Información de vehículos
+      </a>
+    </li>
+    
+    <!-- añadimos la consultar informacion de tarifas --> 
+    <li>
+      <a
+        href="/tarifas/"
+        class="block w-full text-center px-8 py-4 bg-gradient-to-r from-teal-400 via-teal-500 to-teal-600 text-white font-semibold rounded-lg shadow-xl transform transition-all hover:scale-105 hover:shadow-2xl hover:bg-gradient-to-r hover:from-teal-500 hover:via-teal-600 hover:to-teal-700 dark:bg-gradient-to-r dark:from-cyan-400 dark:via-cyan-500 dark:to-cyan-600 dark:hover:from-cyan-500 dark:hover:via-cyan-600 dark:hover:to-cyan-700">
+        Consultar tarifas
       </a>
   </ul>
 </div>

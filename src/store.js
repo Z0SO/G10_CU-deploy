@@ -48,3 +48,67 @@ export const listaVehiculos = writable([
     { patente: 'YZA567', apoderado: 'Santiago Fernandez', periodicidad: 'Mensual', estado: 'Activo', marca: 'Audi', modelo: 'A4', año: 2019 },
     { patente: 'BCD890', apoderado: 'Nicolas Ledesma', periodicidad: 'Anual', estado: 'Activo', marca: 'Fiat', modelo: 'Uno', año: 2018 }
 ]);
+
+
+export const tarifasVehiculos = writable([
+    {
+        modelo: 'Sedan',
+        utilidad: 'Particular',
+        costo: 50000
+    },
+    {
+        modelo: 'SUV',
+        utilidad: 'Particular',
+        costo: 65000
+    },
+    {
+        modelo: 'Pickup',
+        utilidad: 'Particular',
+        costo: 80000
+    },
+    {
+        modelo: 'Sedan',
+        utilidad: 'Empresa',
+        costo: 60000
+    },
+    {
+        modelo: 'SUV',
+        utilidad: 'Empresa',
+        costo: 75000
+    },
+    {
+        modelo: 'Pickup',
+        utilidad: 'Empresa',
+        costo: 90000
+    },
+    {
+        modelo: 'Sedan',
+        utilidad: 'Taxi',
+        costo: 55000
+    },
+    {
+        modelo: 'SUV',
+        utilidad: 'Taxi',
+        costo: 70000
+    },
+    {
+        modelo: 'Pickup',
+        utilidad: 'Taxi',
+        costo: 85000
+    },
+    {
+        modelo: 'Sedan',
+        utilidad: 'Remis',
+        costo: 55000
+    },
+    {
+        modelo: 'SUV',
+        utilidad: 'Remis',
+        costo: 70000
+    },
+    {
+        modelo: 'Pickup',
+        utilidad: 'Remis',
+        costo: 85000
+    }
+]);
